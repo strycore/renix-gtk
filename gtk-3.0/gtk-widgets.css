@@ -15,7 +15,7 @@
 	-GtkHTML-link-color: @link_color;
 	-GtkIMHtml-hyperlink-color: @link_color;
 	-GtkMenu-horizontal-padding: 0;
-	-GtkMenu-vertical-padding: 0;  
+	-GtkMenu-vertical-padding: 0;
 	-GtkMenuBar-internal-padding: 0;
 	-GtkMenuItem-arrow-scaling: 0.5;
 	-GtkNotebook-tab-overlap: 1;
@@ -54,7 +54,7 @@
 	-WnckTasklist-fade-overlay-rect: 0;
 
 	border-width: 1px;
-	
+
 	engine: unico;
 	-unico-focus-border-color: alpha (@selected_bg_color, 0.5);
 	-unico-focus-border-radius: 2;
@@ -108,6 +108,26 @@ GtkWindow {
 	background-color: @selected_bg_color;
 	color: @selected_fg_color;
 }
+
+/*************
+ * Labels    *
+ *************/
+GtkLabel,
+GtkLabel:active,
+GtkLabel:hover,
+GtkLabel:insensitive {
+    background-color: transparent;
+}
+
+/********
+* menu *
+********/
+GtkTreeMenu.menu,
+GtkMenuToolButton.menu,
+GtkComboBox .menu {
+    background-color: shade(@theme_bg_color, 1.18);
+}
+
 
 /*************
  * assistant *
@@ -267,10 +287,10 @@ GtkComboBox.combobox-entry .button:insensitive {
   engine: adwaita;
   border-image: url("assets/combobox-entry-insensitive.svg") 0 10 1 1 / 0 10 1 1 stretch;
   background-color: @transparent;
-  color: @transparent; 
+  color: @transparent;
 }
 GtkComboBox.combobox-entry .button *:insensitive {
-  color: @transparent; 
+  color: @transparent;
 }
 
 .notebook .button/*,
@@ -876,7 +896,7 @@ GtkImage {
 	padding: 0;
   border-width: 0px 1px 1px 1px;
   border-style: solid;
-  border-color: shade (@bg_color, 0.9); 
+  border-color: shade (@bg_color, 0.9);
   -unico-inner-stroke-width: 1 0 0 0;
   -unico-inner-stroke-color: shade (@bg_color, 0.9);
 }
@@ -980,7 +1000,7 @@ GtkScale {
 	-GtkRange-slider-width: 18;
 	-GtkRange-trough-border: 0;
 	-GtkScale-slider-length: 18;
-	
+
 	border-width: 0;
 }
 
@@ -1308,7 +1328,7 @@ GtkTextView {
 	padding: 0px 0px 4px 0px;
 
 	color: @bg_color;
-  
+
 	-unico-border-gradient: none;
 	-unico-inner-stroke-width: 0;
 	-unico-outer-stroke-width: 0;
@@ -1335,7 +1355,7 @@ padding: 5px;
 	-unico-focus-border-radius: 0;
 	-unico-focus-fill-color: alpha (@selected_bg_color, 0.1);
 	-unico-focus-outer-stroke-color: alpha (@selected_bg_color, 0.2);
-  
+
   -unico-inner-stroke-width: 0;
   -unico-outer-stroke-width: 0;
 
