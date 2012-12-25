@@ -71,7 +71,7 @@ GtkWindow {
 * {
     /* inherit the color from parent by default */
     color: inherit;
-    background-color: @theme_bg_color;
+    background-color: @transparent;
 }
 
 /**********
@@ -1013,6 +1013,7 @@ GtkScale.slider {
 
 GtkScale.slider:hover {
   background-image: url("assets/scale-slider-hover.svg");
+  background-color: @transparent;
 }
 
 GtkScale.mark {
