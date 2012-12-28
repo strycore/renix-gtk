@@ -402,7 +402,8 @@ row:selected:focused {
 .check row,
 .radio,
 .radio row {
-  text-shadow: none;;
+  text-shadow: none;
+  background-color: @transparent;
 }
 
 .check,
