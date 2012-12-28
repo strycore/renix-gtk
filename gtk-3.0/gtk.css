@@ -3,7 +3,7 @@
 	WEBSITE: http://tiheum.deviantart.com
 	LICENSE: GPL
 	DESCRIPTION: Ice Cream Sandwich (Android 4) theme for gtk3 apps.
- 
+
         MODDED:
         AUTHOR: Deviantn7k1
         WEBSITE: http://deviantn7k1.deviantart.com
@@ -12,7 +12,7 @@
 */
 
 /* default color scheme */
-@define-color bg_color #eeeeee;
+@define-color bg_color #ffffff;
 @define-color fg_color #2c2c2c;
 @define-color base_color #ffffff;
 @define-color text_color #2c2c2c;
